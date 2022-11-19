@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/plagmacss.css">
+</head>
+<style>
+ 
+</style>
+<body>
+  <script>
+    window.watsonAssistantChatOptions = {
+      integrationID: "3b214ae8-6eba-404e-85be-63772e4c2fef", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "3b4bf0dd-e329-4199-99b4-25f9ba1ee227", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+    setTimeout(function(){
+      const t=document.createElement('script');
+      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+      document.head.appendChild(t);
+    });
+  </script>
+  
+    <h1>Plasma Donor Registration Form</h1>
+    <form action="SEND ADDRESS" id="ft-form" method="POST" accept-charset="UTF-8" enctype="multipart/form-data">
+          <div class="two-cols">
+            <label>
+              First name *
+              <input type="text" name="First name" placeholder="Frist Name" required>
+            </label>
+            <label>
+              last Name *
+              <input type="text" name="Last name" placeholder="Last Name"  required>
+            </label>
+          </div>
+          <div class="two-cols">
+            <label>
+              Citizenship*
+              <input type="text" name="Citizenship" placeholder="Citizenship*"   required>
+            </label>
+            <label>
+              Date of birth*
+              <input type="date" name="Date of birth" placeholder="Date of birth*" required>
+            </label>
+            <label>
+          </div>
+         
+          
+
+         
+            <label>
+              Age in(Year) *
+              <input type="text" name="College name" required>
+            </label>
+           
+          </label>
+           </label>
+          </label>
+          <div>
+            <label> 
+              Blood Group*
+              <select id="Blood Group" name="Blood Group">
+                <option value="select option">select option</option>
+              <option value="A+">A+</option>
+              <option value="A-">A-</option>
+              <option value="B+">B+</option>
+              <option value="B-">B-</option>
+              <option value="AB+">AB+</option>
+              <option value="AB-">AB-</option>
+              <option value="O">O</option>
+              <option value="O">O-</option>
+            </select>
+            </label>
+          </div>
+  
+          <label>
+              Address*
+              <input type="text" name="College name" required>
+            </label>
+              <p class="question">SEX</p>
+              <div class="question-answer">
+                <label><input type="radio" value="none" name="visited" />Male</label>
+                <label><input type="radio" value="none" name="visited" />Female</label>
+                <label><input type="radio" value="none" name="visited" />othere</label>
+              </div>
+            
+          <div class="two-cols">
+            <label>
+              ZIP Code
+              <input type="text" name="ZIP">
+            </label>
+            <label>
+              City
+              <input type="text" name="City">
+            </label>
+          </div>
+          <div class="two-cols">
+            <label>
+              Phone *
+              <input type="tel" name="Phone" required>
+            </label>
+            <label>
+              Email address *
+              <input type="email" name="Email" required>
+            </label>
+          </div>
+
+         
+            </label>
+          </label>
+          <div class="input-field button">
+            <input type="button" value="Submit">
+        </div> 
+    
+    </div>  
+      </form>
+    
+</body>
+</html>
